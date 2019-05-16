@@ -18,10 +18,11 @@ def welcome():
 def login():
     error = None
     if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'secret':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin123':
             error = 'Invalid Username/Password.'
         else:
-            return redirect(url_for('home'))
+            # return redirect(url_for('home'))
+            error = "Login Successful!"
     return render_template('login2.html', error=error)
 
 

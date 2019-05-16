@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>My Login Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="10">
 <style>
@@ -91,12 +92,12 @@ span.psw {
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
     <div class="btn">
-      <button type="submit">Login</button>
+      <button id="btn-login" type="submit">Login</button>
     </div>
   </div>
 </form>
 {% if error %}
-        <p class="error"><strong>Error:</strong> {{ error }}</p>
+        <p class="error"><strong>{{ error }}</strong> </p>
       {% endif %}
 
 </body>
