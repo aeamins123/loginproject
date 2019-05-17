@@ -22,10 +22,11 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3
+  - python app.py
+
 script:
   - python test_login_page.py
 after_script:
   - cd ..
-  - python app.py
 #script:
 #  – python tests/test_login_page.py
