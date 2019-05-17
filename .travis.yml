@@ -26,5 +26,6 @@ script:
   - python test_login_page.py
 after_script:
   - cd ..
+  - python app.py
 #script:
 #  – python tests/test_login_page.py
