@@ -5,3 +5,4 @@ Werkzeug==0.9.4
 itsdangerous==0.24
 selenium==3.14.0
 pytest
+webdriver-manager
