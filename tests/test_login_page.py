@@ -7,7 +7,9 @@ class LoginPageTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome()
+        options = webdriver.ChromeOptions()
+        chrome_options = options.add_argument("--no-sandbox")
+        cls.driver = webdriver.Chrome(executable_path="home/travis/virtualenv/python3.5.6/bin/chromedriver", chrome_options=chrome_options)
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
