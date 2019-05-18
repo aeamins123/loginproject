@@ -14,6 +14,6 @@ RUN pip install -r requirements.txt
 
 ENTRYPOINT [“python”]
 
-CMD [“FlaskLoginPage/app.py”]
+CMD [“app.py”]
 
 EXPOSE 8081
