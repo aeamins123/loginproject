@@ -1,5 +1,5 @@
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku plugins:install @heroku-cli/plugin-container-registry
 heroku container:login
-echo $HEROKU_APP_NAME | heroku container:push web –-app-stdin
+docker build -t registry.heroku.com/${HEROKU_APP_NAME}/web .
 heroku container:release web –a $HEROKU_APP_NAME
