@@ -19,6 +19,7 @@ script :
   - cd ..
 after_success:
   - sh .travis/deploy_dockerhub.sh
+  - sh .travis/deploy_heroku.sh
 # command to run tests
 #
 #before_script:
