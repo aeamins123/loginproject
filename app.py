@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 # route for handling the login page logic
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
     if request.method == 'POST':
