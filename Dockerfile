@@ -12,7 +12,7 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-RUN app.py
+RUN ./app.py
 
 ENTRYPOINT [“python”]
 
