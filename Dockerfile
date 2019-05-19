@@ -12,10 +12,8 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-RUN ./app.py
-
 ENTRYPOINT [“python”]
 
-CMD ['python','app.py']
+CMD ['app.py']
 
 EXPOSE 5000
